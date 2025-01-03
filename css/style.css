@@ -57,12 +57,12 @@ ul{
 
 .logo{
     margin-right: 1.5rem;
-    line-height: 90px;
     font-weight: bold;
     font-family: "Abril Fatface";
     font-size: 1.5rem;
     color: var(--heading-color);
     letter-spacing: 1px;
+    transition: 0.3s;
 }
 
 .logo span{
@@ -76,6 +76,13 @@ header{
     left: 0;
     width: 100%;
     z-index: 10;
+    transition: 0.3s;
+}
+
+header.scrolled{
+    background-color: var(--bg-color-transparent);
+    box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
 }
 
 nav.container{
@@ -84,6 +91,15 @@ nav.container{
     flex-wrap: wrap;
 }
 
+header .logo{
+    height: 120px;
+    line-height: 120px;
+}
+
+header.scrolled .logo{
+    height: 80px;
+    line-height: 80px;
+}
 
 .links{
     flex: 1;
