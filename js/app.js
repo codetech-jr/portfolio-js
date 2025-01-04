@@ -19,3 +19,13 @@ const debounce = (func, wait) => {
 stickyNavbar();
 
 window.addEventListener('scroll', debounce(stickyNavbar, 50));
+
+/* -------------------> Reveal Animation <------------------- */
+
+let sr = ScrollReveal({
+    duration: 2500,
+    distance: "60px",
+});
+
+sr.reveal(".showcase-info", {delay: 600})
+sr.reveal(".showcase-image", {origin: "top", delay: 700})
